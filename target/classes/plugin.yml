@@ -4,7 +4,7 @@ main: me.deyo.rbw.RBWPlugin
 api-version: 1.8
 author: deyo
 description: Ranked BedWars Hook Plugin
-website: https://github.com/deyo/rbw-hook
+website: https://github.com/deyo/rbw-hook-public
 
 depend: [BedWars1058]
 
