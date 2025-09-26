@@ -1,0 +1,33 @@
+
+bot:
+  host: "127.0.0.1"
+  port: 25513
+
+rbw_modes:
+  - "RBW"
+
+debug: false
+
+performance:
+  action_bar_update_interval: 20
+  
+  max_game_setup_retries: 5
+  
+  websocket:
+    max_reconnect_attempts: 5
+    reconnect_delay_seconds: 5
+    connection_timeout_seconds: 10
+
+messages:
+  prefix: "&6[RBW] &r"
+  
+  game_setup:
+    warping: "&eSystem trying to warp you to the game. If you are not getting warped to the map &a{arena} &e, please go to lobby!"
+    warped: "&eSystem warped you to the game of map &a{arena} &e, you may have a good day! Have fun!"
+    retry_message: "&ePlease be patient while the bot is trying to warp the left out players."
+  
+  errors:
+    socket_disconnected: "&cSocket not connected."
+    no_permission: "&cYou don't have permission to use this command."
+    player_only: "&cOnly players can use this command."
+    invalid_usage: "&cInvalid usage. Use: {usage}"

@@ -1,0 +1,41 @@
+name: RBW
+version: 2.0.0
+main: me.deyo.rbw.RBWPlugin
+api-version: 1.8
+author: deyo
+description: Ranked BedWars Hook Plugin
+website: https://github.com/deyo/rbw-hook
+
+depend: [BedWars1058]
+
+commands:
+  ss:
+    description: Request a screenshare for a player
+    usage: /ss <targetIGN>
+    permission: rbw.ss
+    permission-message: "&cYou don't have permission to use this command."
+  
+  call:
+    description: Request a voice call for a player
+    usage: /call <targetIGN>
+    permission: rbw.call
+    permission-message: "&cYou don't have permission to use this command."
+  
+  config:
+    description: Manage plugin configuration
+    usage: /config [reload|info]
+    permission: rbw.admin
+    permission-message: "&cYou don't have permission to use this command."
+
+permissions:
+  rbw.ss:
+    description: Allows using the screenshare command
+    default: op
+  
+  rbw.call:
+    description: Allows using the voice call command
+    default: op
+  
+  rbw.admin:
+    description: Allows managing plugin configuration
+    default: op
